@@ -3,11 +3,12 @@ class Solution {
         String answer = "";
         
         for(int i=0; i<my_string.length(); i++){
-            String substringMs = my_string.substring(i, i+1);
-            if(Character.isUpperCase(substringMs.charAt(0))){
-                answer+=Character.toLowerCase(substringMs.charAt(0));
+            // 수정 전: Char substringMs = my_string.substring(i, i+1);
+            char substringMs = my_string.charAt(i);
+            if(Character.isUpperCase(substringMs)){
+                answer+=String.valueOf(substringMs).toLowerCase();
             }else{
-                answer+=Character.toUpperCase(substringMs.charAt(0));
+                answer+=String.valueOf(substringMs).toUpperCase();
             }
             
         }
