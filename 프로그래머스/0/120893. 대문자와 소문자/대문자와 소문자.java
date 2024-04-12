@@ -3,7 +3,7 @@ class Solution {
         String answer = "";
         
         for(int i=0; i<my_string.length(); i++){
-            // 수정 전: Char substringMs = my_string.substring(i, i+1);
+            // 수정 전: char substringMs = my_string.substring(i, i+1);
             char substringMs = my_string.charAt(i);
             if(Character.isUpperCase(substringMs)){
                 answer+=String.valueOf(substringMs).toLowerCase();
