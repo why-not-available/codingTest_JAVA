@@ -1,13 +1,12 @@
 class Solution {
     public String solution(int age) {
-        StringBuilder answer = new StringBuilder();
-        String s = String.valueOf(age);
-        String[] arr = s.split("");
+        StringBuilder sb = new StringBuilder();
 
-        for (String value : arr) {
-            answer.append((char) ((Integer.parseInt(value)) + 97));
+        while(age > 0) {
+            sb.insert(0, (char) ((age % 10) + (int)'a'));
+            age /= 10;
         }
 
-        return answer.toString();
+        return sb.toString();
     }
 }
