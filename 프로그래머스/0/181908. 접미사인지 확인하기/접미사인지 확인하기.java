@@ -24,12 +24,13 @@ class Solution {
     public int solution(String my_string, String is_suffix) {
         int answer = 0;
         
-//      길이: my_string<=is_suffix 인 경우 || is_suffix가 접미사가 아닌 경우 제외  
+//      길이: my_string<=is_suffix 인 경우
         if(my_string.length()<is_suffix.length()){
             return 0;
         }
         
-        String mySubstring = my_string.substring(my_string.length()-is_suffix.length());                
+        String mySubstring = my_string.substring(my_string.length()-is_suffix.length());
+//      is_suffix가 접미사인 경우   
         if(mySubstring.equals(is_suffix)){
             answer = 1;
         }
