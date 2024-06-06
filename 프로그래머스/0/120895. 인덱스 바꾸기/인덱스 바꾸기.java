@@ -5,7 +5,7 @@ class Solution {
       String temp = strArr[num1];
       strArr[num1] = strArr[num2];
       strArr[num2] = temp;
-
+        
       return String.join("", strArr);
     }
 }
