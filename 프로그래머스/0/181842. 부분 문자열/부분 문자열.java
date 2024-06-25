@@ -11,5 +11,6 @@ class Solution {
     }
 }
 
-// substring(시작인덱스, 마지막인덱스) : 마지막 인덱스 전까지만 출력
+// substring(시작인덱스, 마지막인덱스) : 마지막 인덱스 **전**까지만 출력
+// include()
     
