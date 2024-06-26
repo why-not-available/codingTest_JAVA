@@ -8,6 +8,7 @@ class Solution {
             answer = 2*(a+b);
         }else{
             answer = Math.abs(a-b);
+            // Math.abs(): 절대값 구하기
         }
         return answer;
     }
