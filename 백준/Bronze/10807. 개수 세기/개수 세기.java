@@ -8,7 +8,7 @@ public class Main{
         for(int i=0; i<n; i++){
             array[i] = sc.nextInt();
         }
-        int v = sc.nextInt(); //: 찾을 수
+        int v = sc.nextInt(); //: 찾으려는 수
         int count=0;
         
         for(int i=0; i<array.length; i++){
