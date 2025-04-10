@@ -17,19 +17,3 @@ FROM (SELECT e.EMP_NO, EMP_NAME, CASE
      GROUP BY e.EMP_NO, EMP_NAME, SAL
      ) t
 ORDER BY EMP_NO asc;
-
-
-# case 
-#         when GRADE='S' then sal = SAL*0.8
-#         when GRADE='A' then sal = SAL*0.75
-#         when GRADE='B' then sal = SAL*0.9
-#         when GRADE='C' then sal = SAL;
-
-
-# select EMP_NO, (case when (sum(SCORE))/2 >= 96 then 'S'
-#                      when (sum(SCORE))/2 >= 90 then 'A'
-#                      when (sum(SCORE))/2 >= 80 then 'B'
-#                      else 'C' 
-#                 end) 'GRADE'
-# from HR_GRADE 
-# group by EMP_NO
